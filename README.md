@@ -22,14 +22,15 @@ comments are given there itself. A brief steps are given below,
 >>            copy tira1m.ctl file
 >>            use date.dt.strftime to get timestep values
 >>            write tide.txt by fetching the U, V values (separately for each current)
->>         $$   run task for zonal current
->>         $$ write the tira.pri(file that contains tidal constituents information) as csv file, further export 
+>>           
+>>            run task for zonal current
+>>            write the tira.pri(file that contains tidal constituents information) as csv file, further export 
 >>            
->>         $$ do the above $$ steps for meridional component too
->>         Load the outputs of tide1.out and tide2.out to getch the u-raw, u-tide, u-residual currents, same for meridional data as well
->>         export the data using xarray.Dataset creation method.
->>       $ if neeeded add the dimension of depth( was necessary for mine)
->>         add attributes to the variable and its coordinates
->>         convert calendar if needed
->>         Change the tira1m.ctl files inside variables, so as to proceed to next file with a new control file       
->>            
+>>            do the above $$ steps for meridional component too
+>>         
+>>            Load the outputs of tide1.out and tide2.out to getch the u-raw, u-tide, u-residual currents, same for meridional data as well
+>>            export the data using xarray.Dataset creation method.
+>>            if neeeded add the dimension of depth( was necessary for mine)
+>>            add attributes to the variable and its coordinates
+>>            convert calendar if needed
+>>            Change the tira1m.ctl files inside variables, so as to proceed to next file with a new control file       
